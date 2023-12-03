@@ -165,12 +165,12 @@ class LinkedList1<K>{
 
             return;
         }
-        int l=1;
+       
 
         Node temp=head;
         while(temp.next!=null){
             temp=temp.next;
-            l++;
+            
         }
         temp.next=newnode;
 
@@ -217,7 +217,9 @@ public class HashTable {
 
         String[] arr=line.toLowerCase().split(" ");
 
-        
+        String line2="Paranoids are nots paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
+        String[] arr1=line2.toLowerCase().split(" ");
+
 
 
         MyLinkedHashMap<String,Integer> linkedHashMap=new MyLinkedHashMap();
@@ -225,7 +227,7 @@ public class HashTable {
 
 
 
-        for(String s:arr){
+        for(String s:arr1){
             Integer val= linkedHashMap.get(s);
 
 
@@ -248,6 +250,9 @@ public class HashTable {
         }
         
         linkedHashMap.display();
+
+
+
 
 
 
