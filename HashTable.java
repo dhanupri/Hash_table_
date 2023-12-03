@@ -1,5 +1,3 @@
-package Hash_table1;
-
 
 import java.util.ArrayList;
 
@@ -170,7 +168,7 @@ class LinkedList1<K>{
         Node temp=head;
         while(temp.next!=null){
             temp=temp.next;
-            
+           
         }
         temp.next=newnode;
 
@@ -248,15 +246,8 @@ public class HashTable {
 
 
         }
-        
+        linkedHashMap.remove("are");
         linkedHashMap.display();
-
-
-
-
-
-
-
 
 
     }
